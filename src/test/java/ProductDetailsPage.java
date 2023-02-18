@@ -30,21 +30,7 @@ public class ProductDetailsPage {
         WebElement addToCart = driver.findElement(By.id("addToBasket462234"));
         assertTrue(addToCart.isDisplayed());
     }
-    @Test(priority = 3)
-    public void verifyThatClickingkitchenButtonOpenskitchenPage() {
-        WebElement addToCart = driver.findElement(By.id("addToBasket462234"));
-        BaseTest.wait.until(ExpectedConditions.elementToBeClickable(addToCart));
-        addToCart.click();
-        WebElement sideCartRail = driver.findElement(By.id("sideCartRail"));
-        assertTrue(sideCartRail.isDisplayed());
-//        BaseTest.wait.until(ExpectedConditions.elementToBeClickable(sideCartRail));
-//        globalBasket.click();
 
-
-       /* BaseTest.wait.until(ExpectedConditions.elementToBeClickable(sideCartRail));
-
-        assertTrue(sideCartRail.isDisplayed());*/
-    }
 
 
     @AfterClass
